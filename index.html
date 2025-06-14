@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Missão Respeito no Parque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Missão Respeito no Parque</h1>
+  <p>Explore o parque, encontre os valores e responda para ganhar medalhas!</p>
+  <div id="scoreboard">Acertos: <span id="score">0</span></div>
+  <div id="game-board">
+    <img id="player" src="https://cdn-icons-png.flaticon.com/512/3103/3103984.png" alt="Idoso jogador" />
+
+    <!-- Elementos do parque -->
+    <img class="item" src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" alt="Banco" style="top: 80px; left: 120px;"
+      data-question="Por que oferecer lugar a um idoso é importante?"
+      data-options="Porque é costume,Por respeito e conforto,Para parecer educado" data-answer="1"/>
+
+    <img class="item" src="https://cdn-icons-png.flaticon.com/512/554/554993.png" alt="Placa de direito" style="top: 180px; left: 300px;"
+      data-question="Qual lei garante prioridade de atendimento ao idoso?"
+      data-options="Estatuto da Juventude,Estatuto da Criança e Adolescente,Estatuto do Idoso" data-answer="2"/>
+
+    <img class="item" src="https://cdn-icons-png.flaticon.com/512/2754/2754574.png" alt="Escola/livro" style="top: 300px; left: 200px;"
+      data-question="Idosos podem estudar?"
+      data-options="Não,Sim,Depende da idade" data-answer="1"/>
+  </div>
+
+  <div id="question-box" class="hidden">
+    <p id="question-text"></p>
+    <div id="options"></div>
+  </div>
+
+  <div id="message-box"></div>
+
+  <div id="medal-box" class="hidden">
+    <p id="medal-message"></p>
+    <img id="medal-image" src="" alt="Medalha" />
+  </div>
+
+  <audio id="correct-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5fae989d99.mp3"></audio>
+  <audio id="wrong-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2a86c843d8.mp3"></audio>
+  <audio id="win-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_8e0db4c728.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

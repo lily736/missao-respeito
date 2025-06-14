@@ -1,0 +1,53 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #a6d8a8;
+}
+h1, p {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+#game-board {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  background: url('https://cdn.pixabay.com/photo/2017/02/01/22/02/park-2039909_1280.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+#player {
+  position: absolute;
+  width: 50px;
+  top: 10px;
+  left: 10px;
+}
+.item {
+  position: absolute;
+  width: 50px;
+  cursor: pointer;
+}
+#question-box, #message-box, #medal-box {
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+}
+.hidden { display: none; }
+#scoreboard {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+}
